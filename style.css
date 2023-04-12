@@ -1,0 +1,316 @@
+/*-----------------fonts starts-------------------*/
+@font-face {
+    font-family: nebula;
+    src: url(Nebula-Regular.otf);
+}
+
+@font-face {
+    font-family: nebula2;
+    src: url(Nebula-Hollow.otf);
+}
+
+@font-face {
+    font-family: robotothin;
+    src: url(Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: aspace;
+    src: url(A-Space_Thin.otf);
+}
+
+@font-face {
+    font-family: dual;
+    src: url(Dual-300.otf);
+}
+
+@font-face {
+    font-family: autobus;
+    src: url(Autobus-Bold.ttf);
+}
+/*----------------ends-----------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.num1 {
+    height: 250vh;
+    width: 100%;
+    background-image: url(BG.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo {
+    color: white;
+    font-size: 50px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: nebula;
+}
+
+span {
+    color: red;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+    font-family: robotothin;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: red;
+    transform: .4s;
+}
+
+.btn {
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-family: autobus;
+}
+
+.btn:hover {
+    border: 2px solid red;
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: .3s;
+}
+
+.main img {
+    height: auto;
+    width: 430px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.about-text {
+    width: 550px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h2 {
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-family: nebula;
+    padding-bottom: 400px;
+}
+
+.about-text p {
+    color: pink;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+    font-family: dual;
+    padding-bottom: 100px;
+}
+
+.bars img {
+    height: 50px;
+    width: 50px;
+    border: 5px solid red;
+    padding: 3px;
+    margin: 5px;
+    border-radius: 30px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p:nth-child(1) {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: dual;
+}
+
+footer p:nth-child(2) {
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    line-height: 26px;
+    font-family: autobus;
+}
+
+.social {
+    display: flex;
+}
+
+.social a {
+    width: 45px;
+    height: 45px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: red;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social a:hover {
+    transform: scale(1.3);
+    transition: .3s;
+}
+
+.end {
+    position: absolute;
+    color: white;
+    bottom: 35px;
+    font-size: 14px;
+    font-family: aspace;
+}
+
+.b {
+    text-decoration: none;
+    color: white;
+    font-family: inherit;
+}
+
+.about img {
+    height: auto;
+    width: 430px;
+}
+
+.gotopbtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: red;
+    bottom: 42px;
+    right: 28px;
+    bottom: 20px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 25px;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 8px 10px;
+    border-radius: 30px;
+}
+
+.gotopbtn:hover {
+    transform: scale(1.3);
+    transition: .3s;
+}
+
+.next {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: red;
+    bottom: 42px;
+    left: 28px;
+    bottom: 20px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 25px;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 5px;
+    border-radius: 30px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-family: autobus;
+}
+
+.next:hover {
+    background-color: transparent;
+    border: 2px solid red;
+    cursor: pointer;
+}
+
+.previous {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: red;
+    bottom: 42px;
+    left: 80px;
+    bottom: 20px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 25px;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 5px;
+    border-radius: 30px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-family: autobus;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
